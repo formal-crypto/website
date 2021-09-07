@@ -1,0 +1,11 @@
+header {
+  display: block;
+  position: relative;
+
+  margin: 3.25rem 0;
+  color: var(--color-text);
+
+  @media screen and (max-width: 479px) {
+    margin: 2rem 0;
+  }
+}

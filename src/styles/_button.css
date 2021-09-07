@@ -1,0 +1,32 @@
+.button {
+  display: inline-block;
+  cursor: pointer;
+
+  margin: 2.5rem 0;
+  padding: 1rem 2.5rem;
+
+  font-size: 1.25rem;
+  font-family: var(--font-regular);
+  font-weight: 500;
+
+  color: var(--color-background);
+  background-color: var(--color-accent);
+
+  border: none;
+  border-radius: 0.25rem;
+
+  transition: background 0.5s, color 0.5s;
+
+  &:hover {
+    color: var(--color-background);
+    background: var(--color-light);
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 1.125rem;
+  }
+
+  @media screen and (max-width: 479px) {
+    font-size: 1rem;
+  }
+}

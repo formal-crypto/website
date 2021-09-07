@@ -1,0 +1,25 @@
+{
+  "name": "formal-labs",
+  "author": {
+    "name": "Anton Lukin",
+    "email": "anton@lukin.me",
+    "url": "https://lukin.me"
+  },
+  "license": "MIT",
+  "version": "0.0.1",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "cssnano": "^5.0.7",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "postcss": "^8.3.6",
+    "postcss-css-variables": "^0.18.0",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.6"
+  }
+}
