@@ -11,7 +11,7 @@ gulp.task('css', () => {
       .pipe(plumber())
       .pipe(postcss())
       .pipe(concat('styles.min.css'))
-      .pipe(gulp.dest('dist/'));
+      .pipe(gulp.dest('.'));
 });
 
 gulp.task('views', () => {
@@ -21,7 +21,7 @@ gulp.task('views', () => {
       basedir: __dirname
     }))
     .pipe(concat('index.html'))
-    .pipe(gulp.dest('public/'))
+    .pipe(gulp.dest('docs/'))
 });
 
 // Watch soruces and update styles and scripts
@@ -34,7 +34,7 @@ gulp.task('watch', (done) => {
 // Create serve webserver
 gulp.task('connect', (done) => {
   connect.server({
-    root: 'public'
+    root: 'docs'
   });
 
   done();
