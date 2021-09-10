@@ -21,7 +21,7 @@ gulp.task('views', () => {
       basedir: __dirname
     }))
     .pipe(concat('index.html'))
-    .pipe(gulp.dest('docs/'))
+    .pipe(gulp.dest('public/'))
 });
 
 // Watch soruces and update styles and scripts
@@ -34,7 +34,7 @@ gulp.task('watch', (done) => {
 // Create serve webserver
 gulp.task('connect', (done) => {
   connect.server({
-    root: 'docs'
+    root: 'public'
   });
 
   done();
