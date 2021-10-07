@@ -51,15 +51,28 @@ html(prefix='og: http://ogp.me/ns#')
 
         section.section
             h3#contacts Contact us
-            p We are glad to receive any of your feedback and suggestions. Write to 
-                a(href="mailto:hello@formal.works") email
-                |  or contact us directly via 
+            p We are glad to receive any of your feedback and suggestions. 
+                | Use contact form below or sent the message directly via 
                 a(href="https://t.me/lukin") Telegram
                 | .
+
+            form.form(action='/send/', method='POST')
+                p
+                    label Your e-mail address
+                    input(name='text' required)
+                p    
+                    label The message
+                    textarea(required)
+                p
+                    button.button(type='submit') Send
+
 
         footer.footer
             p
                 span &copy; 2021 — Formal Works.
+
+        script
+            include /scripts.min.js
 
 
 

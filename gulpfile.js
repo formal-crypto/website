@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
 const plumber = require('gulp-plumber');
 const connect = require('gulp-connect');
 const pug = require('gulp-pug');
@@ -11,6 +12,14 @@ gulp.task('css', () => {
       .pipe(plumber())
       .pipe(postcss())
       .pipe(concat('styles.min.css'))
+      .pipe(gulp.dest('.'));
+});
+
+gulp.task('js', () => {
+  return gulp.src('src/scripts/*.js')
+      .pipe(plumber())
+      .pipe(uglify())
+      .pipe(concat('scripts.min.js'))
       .pipe(gulp.dest('.'));
 });
 
@@ -26,7 +35,7 @@ gulp.task('views', () => {
 
 // Watch soruces and update styles and scripts
 gulp.task('watch', (done) => {
-  gulp.watch(['src/**/*'], gulp.series('css', 'views'));
+  gulp.watch(['src/**/*'], gulp.series('css', 'js', 'views'));
 
   done();
 });
@@ -41,7 +50,7 @@ gulp.task('connect', (done) => {
 });
 
 // Build static files
-gulp.task('build', gulp.series('css', 'views'));
+gulp.task('build', gulp.parallel('css', 'js', 'views'));
 
 // Build static files and watch changes by default.
-gulp.task('serve', gulp.series('css', 'views', 'connect', 'watch'));
+gulp.task('serve', gulp.parallel('css', 'js', 'views', 'connect', 'watch'));

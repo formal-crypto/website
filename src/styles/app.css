@@ -4,6 +4,7 @@
 @import url('_button.css');
 @import url('_header.css');
 @import url('_section.css');
+@import url('_form.css');
 @import url('_footer.css');
 
 @font-face {
@@ -19,7 +20,9 @@ html {
   --color-accent: #52fbd5;
   --color-text: #ccc;
   --color-background: #111114;
+  --color-forms: #1a1a20;
   --color-light: #f0f0f0;
+  --color-border: #000;
 
   --font-regular: -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --font-caption: 'Merriweather', serif;
