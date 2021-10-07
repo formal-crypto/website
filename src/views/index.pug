@@ -59,10 +59,10 @@ html(prefix='og: http://ogp.me/ns#')
             form.form(action='/send/', method='POST')
                 p
                     label Your e-mail address
-                    input(name='text' required)
-                p    
+                    input(name='email', type='text', required)
+                p
                     label The message
-                    textarea(required)
+                    textarea(name='text', required)
                 p
                     button.button(type='submit') Send
 
