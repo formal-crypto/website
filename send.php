@@ -55,4 +55,8 @@ if (!isset($_POST['email'], $_POST['text'])) {
     show_error('All form fields must be filled');
 }
 
+if (empty($_SERVER['HTTP_X_REQUESTED_WITH']) || strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'xmlhttprequest') {
+    show_error('Can not send request directly');
+}
+
 send_message($_POST);
