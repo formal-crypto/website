@@ -10,6 +10,7 @@
     button.textContent = 'Sending…';
 
     const payload = new FormData(form);
+    payload.append('client', 'js');
 
     // Get message element
     const formset = button.parentElement;
