@@ -2,10 +2,32 @@ const gulp = require('gulp');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const plumber = require('gulp-plumber');
-const connect = require('gulp-connect');
+const browserSync = require('browser-sync').create();
 const pug = require('gulp-pug');
 
-gulp.task('css', () => {
+const paths = {
+  dist: './public/',
+  src: './src',
+};
+
+function browserSyncInit(done) {
+  browserSync.init({
+    server: {
+      baseDir: paths.dist,
+    },
+    ui: false,
+    host: 'localhost',
+    port: 9000
+  });
+  done();
+}
+
+function browserSyncReload(done) {
+  browserSync.reload();
+  done();
+}
+
+function stylesProcess() {
   const postcss = require('gulp-postcss');
 
   return gulp.src('src/styles/app.css')
@@ -13,44 +35,38 @@ gulp.task('css', () => {
       .pipe(postcss())
       .pipe(concat('styles.min.css'))
       .pipe(gulp.dest('.'));
-});
+}
 
-gulp.task('js', () => {
+function scriptsProcess() {
   return gulp.src('src/scripts/*.js')
       .pipe(plumber())
       .pipe(uglify())
       .pipe(concat('scripts.min.js'))
       .pipe(gulp.dest('.'));
-});
+}
 
-gulp.task('views', () => {
+function htmlProcess() {
   return gulp.src('src/views/index.pug')
     .pipe(plumber())
     .pipe(pug({
       basedir: __dirname
     }))
     .pipe(concat('index.html'))
-    .pipe(gulp.dest('public/'))
-});
+    .pipe(gulp.dest(paths.dist))
+}
 
-// Watch soruces and update styles and scripts
-gulp.task('watch', (done) => {
-  gulp.watch(['src/**/*'], gulp.series('css', 'js', 'views'));
-
-  done();
-});
-
-// Create serve webserver
-gulp.task('connect', (done) => {
-  connect.server({
-    root: 'public'
-  });
-
-  done();
-});
-
-// Build static files
-gulp.task('build', gulp.parallel('css', 'js', 'views'));
+function watchFiles() {
+  gulp.watch(
+    './src' + '/**/*',
+    gulp.series(stylesProcess, scriptsProcess, htmlProcess, browserSyncReload)
+  );
+}
 
 // Build static files and watch changes by default.
-gulp.task('serve', gulp.parallel('css', 'js', 'views', 'connect', 'watch'));
+const build = gulp.series(stylesProcess, scriptsProcess, htmlProcess);
+
+// Wath file changes
+const watch = gulp.parallel(build, watchFiles, browserSyncInit);
+
+exports.build = build;
+exports.default = watch;
