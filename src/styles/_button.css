@@ -5,7 +5,7 @@
   margin: 2.5rem 0;
   padding: 1rem 2.5rem;
 
-  font-size: 1.25rem;
+  font-size: 1em;
   font-family: var(--font-regular);
   font-weight: 500;
 
@@ -27,13 +27,5 @@
   &[disabled] {
     cursor: wait;
     background: var(--color-light);
-  }
-
-  @media screen and (max-width: 767px) {
-    font-size: 1.125rem;
-  }
-
-  @media screen and (max-width: 479px) {
-    font-size: 1rem;
   }
 }

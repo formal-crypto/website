@@ -4,6 +4,7 @@
 @import url('_button.css');
 @import url('_header.css');
 @import url('_section.css');
+@import url('_details.css');
 @import url('_form.css');
 @import url('_footer.css');
 
@@ -18,7 +19,7 @@
 
 html {
   --color-accent: #52fbd5;
-  --color-text: #ccc;
+  --color-text: #ddd;
   --color-background: #111114;
   --color-forms: #1a1a20;
   --color-light: #f0f0f0;
@@ -42,7 +43,7 @@ body {
   padding: 0 1.5rem;
   max-width: 52rem;
 
-  font-size: 16px;
+  font-size: 20px;
   font-family: var(--font-regular);
   line-height: 1.5;
   font-weight: 400;
@@ -51,8 +52,13 @@ body {
   color: var(--color-text);
   background-color: var(--color-background);
 
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+  }
+
   @media screen and (max-width: 479px) {
     padding: 0 1rem;
+    font-size: 16px;
   }
 }
 
@@ -68,29 +74,19 @@ a {
   }
 }
 
+strong {
+  font-weight: 500;
+}
+
 p {
   margin: 1rem 0 0;
-  font-size: 1.25rem;
-
-  @media screen and (max-width: 767px) {
-    font-size: 1.125rem;
-  }
-
-  @media screen and (max-width: 479px) {
-    font-size: 1rem;
-  }
 }
 
 ul {
   margin: 1rem 0 0 2.5rem;
-  font-size: 1.25rem;
 
-  @media screen and (max-width: 767px) {
-    font-size: 1.125rem;
-  }
-
-  @media screen and (max-width: 479px) {
-    font-size: 1rem;
+  li {
+    margin: 0.5rem 0;
   }
 }
 
@@ -98,7 +94,7 @@ h2 {
   margin: 0 0 1.5rem;
   padding: 0.5em 0 0;
 
-  font-size: 3.25rem;
+  font-size: 2.25em;
   font-family: var(--font-caption);
   font-weight: 400;
   line-height: 1.25;
@@ -106,20 +102,20 @@ h2 {
   color: var(--color-light);
 
   @media screen and (max-width: 1023px) {
-    font-size: 2.75rem;
+    font-size: 2em;
   }
 
   @media screen and (max-width: 767px) {
-    font-size: 2.25rem;
+    font-size: 1.875em;
     line-height: 1.375;
   }
 
   @media screen and (max-width: 479px) {
-    font-size: 1.875rem;
+    font-size: 1.5em;
   }
 
   @media screen and (max-width: 359px) {
-    font-size: 1.75rem;
+    font-size: 1.25em;
   }
 }
 
@@ -127,36 +123,29 @@ h3 {
   margin: 0 0 1rem;
   padding: 0.5em 0 0;
 
-  font-size: 2rem;
+  font-size: 1.75em;
   font-family: var(--font-caption);
   font-weight: 400;
   line-height: 1.25;
 
   color: var(--color-light);
 
-  @media screen and (max-width: 1023px) {
-    font-size: 1.75rem;
-  }
-
   @media screen and (max-width: 767px) {
-    font-size: 1.5rem;
+    font-size: 1.5em;
+    line-height: 1.375;
   }
 
   @media screen and (max-width: 479px) {
-    font-size: 1.375rem;
+    font-size: 1.375em;
+  }
+
+  @media screen and (max-width: 359px) {
+    font-size: 1.25em;
   }
 }
 
 h4 {
   margin: 1rem 0 0;
-  font-size: 1.375rem;
+  font-size: 1.25em;
   font-weight: 500;
-
-  @media screen and (max-width: 767px) {
-    font-size: 1.25rem;
-  }
-
-  @media screen and (max-width: 479px) {
-    font-size: 1.125rem;
-  }
 }
