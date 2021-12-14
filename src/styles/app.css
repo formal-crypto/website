@@ -47,6 +47,7 @@ body {
   font-family: var(--font-regular);
   line-height: 1.5;
   font-weight: 400;
+  letter-spacing: 0.0125em;
 
   color: var(--color-text);
   background-color: var(--color-background);
@@ -58,6 +59,7 @@ body {
   @media screen and (max-width: 479px) {
     padding: 0 1rem;
     font-size: 16px;
+    letter-spacing: 0.0075em;
   }
 }
 
