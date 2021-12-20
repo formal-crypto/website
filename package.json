@@ -1,5 +1,4 @@
 {
-  "name": "formal-labs",
   "author": {
     "name": "Anton Lukin",
     "email": "anton@lukin.me",
@@ -7,10 +6,10 @@
   },
   "scripts": {
     "start": "gulp",
-    "build": "gulp build --production true"
+    "build": "gulp build"
   },
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "devDependencies": {
     "autoprefixer": "^10.3.1",
     "browser-sync": "^2.27.7",

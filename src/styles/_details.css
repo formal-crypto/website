@@ -21,12 +21,25 @@
 
     span {
       display: inline-flex;
-      align-items: center;
+      align-items: flex-start;
 
       font-weight: var(--font-bold);
 
       user-select: none;
       cursor: pointer;
+
+      &::before {
+        content: '—';
+        margin: 0 0.5rem;
+
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        display: flex;
+      }
     }
 
     span::after {
@@ -41,6 +54,7 @@
       mask-repeat: no-repeat;
       background-color: var(--color-accent);
 
+      transform: translateY(0.5rem);
       transition: transform 200ms;
     }
 
@@ -49,7 +63,7 @@
     }
 
     &:hover span::after {
-      transform: translateX(0.25rem);
+      transform: translate(0.25rem, 0.5rem);
     }
 
     &:hover {
@@ -63,7 +77,7 @@
     }
 
     summary span::after {
-      transform: rotate(90deg);
+      transform: translate(0.25rem, 0.5rem) rotate(90deg);
     }
   }
 
