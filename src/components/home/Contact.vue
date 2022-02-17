@@ -96,7 +96,7 @@
 </template>
 
 <script>
-import { sendMail } from '@/api'
+import { sendTG } from '@/api'
 
 export default {
   name: 'Contact',
@@ -148,7 +148,7 @@ export default {
         }
       }
 
-      const response = await sendMail(formData)
+      const response = await sendTG(formData)
 
       if (response.status === 200) {
         this.showMessage()

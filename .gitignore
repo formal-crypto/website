@@ -1,11 +1,12 @@
 .DS_Store
 node_modules
-/dist
 /temp
+/vendor
 
 # local env files
 .env.local
 .env.*.local
+.env
 
 # Log files
 npm-debug.log*
@@ -21,3 +22,4 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+

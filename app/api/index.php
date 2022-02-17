@@ -1,10 +1,7 @@
 <?php
 
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-
-require('Route.php');
-require('Send.php');
+require(__DIR__ . '/Route.php');
+require(__DIR__ . '/Send.php');
 
 Route::add('/', function () {
   echo 'api';
