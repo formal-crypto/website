@@ -1,0 +1,239 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-right: 6%;
+  transition: $transition-settings;
+  position: relative;
+
+  @media (max-width: $tablets-max) {
+    padding-right: 0;
+  }
+
+  @media (max-width: $mobiles-max) {
+    row-gap: 20px;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.form__fields {
+  display: flex;
+  column-gap: 10px;
+  min-height: 55px;
+
+  @media (max-width: $mobiles-max) {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+
+.form__field {
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  min-width: 340px;
+
+  @media (max-width: $mobiles-max) {
+    min-width: auto;
+  }
+}
+
+.form__input {
+  width: 100%;
+  height: 55px;
+  padding: 0 15px;
+  opacity: 0.5 !important;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 2px solid $color-white;
+  background-color: $color-black-main;
+  transition: all $transition-settings;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: $color-grey !important;
+  transition: $transition-settings;
+
+  @media (max-width: $mobiles-max) {
+    width: 100%;
+    height: 45px;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &:focus {
+    opacity: 1 !important;
+    padding-top: 15px;
+  }
+
+  &.error {
+    border-bottom: 2px solid $color-red;
+  }
+
+  &:valid,
+  &:invalid {
+    padding-top: 15px;
+  }
+}
+
+.form__message {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 55px;
+
+  &-textarea {
+    width: 100%;
+    padding: 0 15px;
+    opacity: 0.5 !important;
+    resize: none;
+    transition: all $transition-settings;
+    background-color: $color-black-main;
+    height: 55px;
+
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 2px solid #fff;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: $color-grey !important;
+
+    @media (max-width: $mobiles-max) {
+      height: 45px;
+
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &:focus {
+      opacity: 1 !important;
+      padding-top: 25px;
+    }
+
+    &:valid,
+    &:invalid {
+      padding-top: 15px;
+    }
+
+    scrollbar-width: thin;
+    scrollbar-color: $color-white;
+
+    /* для Chrome/Edge/Safari */
+    &::-webkit-scrollbar {
+      height: 5px;
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $color-black;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      height: 15px;
+      background-color: $color-white;
+      border-radius: 0;
+      border: 1px solid $color-black;
+    }
+
+    @media (max-width: $tablets-max) {
+      overflow-y: initial;
+    }
+  }
+
+  .form__field {
+    @media (max-width: $mobiles-max) {
+      height: 55px;
+    }
+
+    @media (max-width: $mobiles-max) {
+      height: 45px;
+    }
+  }
+}
+
+.form__label {
+  opacity: 0.5;
+  position: absolute;
+  top: 18px;
+  left: 5px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: $color-grey;
+  transition: $transition-settings;
+
+  @media (max-width: $mobiles-max) {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.form__field input:focus + label,
+.form__field textarea:focus + label,
+.form__field input:not(:placeholder-shown) + label,
+.form__field textarea:not(:placeholder-shown) + label {
+  top: 2px;
+  left: 0;
+  font-size: 12px;
+}
+
+.form__errors {
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.form__error {
+  color: $color-red;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 6px 0;
+}
+
+.form__submit {
+  max-width: 190px;
+}
+
+.form__text {
+  margin-bottom: 0;
+
+  a {
+    color: $color-green-light;
+  }
+
+  @media (max-width: $mobiles-max) {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 7px;
+  }
+}
