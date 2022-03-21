@@ -74,8 +74,8 @@
         </p>
         <p>
           Great experience with a&nbsp;deep understanding of&nbsp;technology allows us
-          to&nbsp;create customized products for&nbsp;our&nbsp;customers. We solve
-          the&nbsp;problems of&nbsp;our business partners, regardless of&nbsp;their complexity.
+          to&nbsp;create customized products for&nbsp;our&nbsp;customers. We solve the&nbsp;problems
+          of&nbsp;our business partners, regardless of&nbsp;their complexity.
         </p>
 
         <p>Our highly qualified developers can get involved with your team at&nbsp;any stage.</p>
