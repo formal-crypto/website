@@ -14,9 +14,8 @@
           @submit.prevent="onSubmit()"
         >
           <p class="form__text">
-            You can send the message directly via
-            <a href="https://t.me/formalcrypto" target="blank">Telegram</a> or use contact form so
-            we can get in touch with you
+            Our team is happy to answer your questions.<br />Fill out the&nbsp;form or contact us
+            via <a href="https://t.me/formalcrypto" target="blank">Telegram</a>.
           </p>
           <div class="form__inputs">
             <div class="form__field">
@@ -35,22 +34,22 @@
                 <p class="form__error">{{ form.name.error }}</p>
               </template>
             </div>
-            <div class="form__field">
-              <input
-                id="email"
-                v-model="form.email.value"
-                class="form__input"
-                :class="{ error: form.email.error }"
-                name="email"
-                :type="form.email.type"
-                size="20"
-                placeholder=" "
-              />
-              <label class="form__label" for="email">{{ form.email.label }}</label>
-              <template v-if="form.email.error">
-                <p class="form__error">{{ form.email.error }}</p>
-              </template>
-            </div>
+            <!--            <div class="form__field">-->
+            <!--              <input-->
+            <!--                id="email"-->
+            <!--                v-model="form.email.value"-->
+            <!--                class="form__input"-->
+            <!--                :class="{ error: form.email.error }"-->
+            <!--                name="email"-->
+            <!--                :type="form.email.type"-->
+            <!--                size="20"-->
+            <!--                placeholder=" "-->
+            <!--              />-->
+            <!--              <label class="form__label" for="email">{{ form.email.label }}</label>-->
+            <!--              <template v-if="form.email.error">-->
+            <!--                <p class="form__error">{{ form.email.error }}</p>-->
+            <!--              </template>-->
+            <!--            </div>-->
             <div class="form__message">
               <div class="form__field">
                 <textarea

@@ -132,10 +132,9 @@
       <div class="blank__texts">
         <h2>Developing Blockchain Solutions</h2>
         <p>
-          We are a team of full-stack programmers and mathematicians focused on the development of
-          blockchain software solutions.
+          Unique blockchain developers team with&nbsp;deep experience in&nbsp;every part
+          of&nbsp;the&nbsp;blockchain ecosystem.
         </p>
-
         <button class="button button--contact" tabindex="3" @click.prevent="$root.goTo('#contact')">
           Contact us
         </button>

@@ -1,6 +1,10 @@
 .contact {
   margin-top: 185px;
 
+  @media (min-width: $desktops) {
+    margin-bottom: 30px;
+  }
+
   @media (max-width: $tablets-max) {
     margin-top: 140px;
   }
