@@ -15,7 +15,7 @@
             <p
               class="projects__tab"
               :class="{ 'projects__tab--active': tab.active }"
-              @click="$switchActive(i, tabs)"
+              @mouseenter="$switchActive(i, tabs)"
             >
               {{ tab.title }}
             </p>
@@ -54,42 +54,75 @@ export default {
         {
           active: true,
           scrolled: false,
-          title: 'Mars staking',
-          subtitle: 'Mars staking',
-          text: '<p>Development of a staking contract for&nbsp;ERC-20 token.</p><p>Development of a staking contract for&nbsp;ERC-20&nbsp;token. Solidity Smart Contract development with an original logic and high-security requirements. Adding the ability to update using the developed Proxy contract based on ERC1967 and creating Web interfacefor MVP.</p>',
-          img: require('@/assets/img/globe.png')
-        },
-        {
-          active: false,
-          scrolled: false,
-          title: 'NFT collection',
-          subtitle: 'NFT collection',
-          text: '<p>Creating an NFT collection on the Ethereum network.</p><p>Development of an ERC721 smart contract for Solidity, which includes the&nbsp;logic&nbsp;of a private presale, gas savings, and limiting the number of sales per wallet.</p><p>Creation of a landing page for mint new tokens, integration with MetaMask and WalletConnect. Generate a collection of pseudo-random images and attributes depending on the weights of different layers types. Create an IPFS node and pin an NFT collection to it. Integration of the collection with the OpenSea auction.</p>',
+          title: 'NFT Early Adopters',
+          subtitle: 'NFT Early Adopters',
+          text: '<p>The NFT Early Adopters project is the&nbsp;BEP-721 smart contract on&nbsp;the&nbsp;Binance Smart Chain network.</p><p>Authentication tokens (passes), based on&nbsp;NFT, provide users with access to&nbsp;a&nbsp;wide range of&nbsp;services related to&nbsp;a&nbsp;Play-To-Earn game Axis Infinity. Passes are issued for&nbsp;maintaining activity in&nbsp;the&nbsp;social networks of&nbsp;the&nbsp;project. Proxy technology is implemented for&nbsp;future updates.</p>',
           img: require('@/assets/img/eth.png')
         },
         {
           active: false,
           scrolled: false,
-          title: 'Stablecoin',
-          subtitle: 'Stablecoin',
-          text: '<p>Creation of White Paper for the Stablecoin protocol.</p><p>AlgoEURS is a decentralized finance (DeFi) protocol on Ethereum blockchain that allows users to borrow AEUR, a stablecoin pegged to the euro, using a wide range of on-chain assets as collateral including plain Ether, other stable coins, non-stable fungible tokens, and various non-fungible assets.</p><p>The protocol allows borrowers to insure against the liquidation of the collateral assets and provides a platform for investors to make money as insurers.</p><p>To create the possibility of insuring the collateral and making money on it, the protocol issues AEPUT token on Ethereum blockchain.</p>',
+          title: 'NFT ART',
+          subtitle: 'NFT ART',
+          text: '<p>The ERC-721 smart contract is developed with the&nbsp;mechanics of&nbsp;the&nbsp;marketplace at&nbsp;the&nbsp;blockchain level. The&nbsp;functions of&nbsp;selling, viewing all active lots, and buying are integrated within the&nbsp;contract.</p><p>The service allows users to&nbsp;create digital art (NFT) with the&nbsp;possibility of&nbsp;obtaining a&nbsp;physical version. Royalties, NFTs limit per user, vesting time are configurable parameters of&nbsp;the&nbsp;sales mechanism on&nbsp;the&nbsp;marketplace.</p><p>A landing page is created with a&nbsp;protocol for&nbsp;connecting crypto wallets.</p>',
+          img: require('@/assets/img/eth.png')
+        },
+        {
+          active: false,
+          scrolled: false,
+          title: 'NFT Wall Street Gang',
+          subtitle: 'Wall Street Gang',
+          text: '<p>The Wall Street Gang collection at&nbsp;the&nbsp;OpenSea marketplace is created on&nbsp;the&nbsp;Ethereum network.</p><p>Advanced gasless listing technology is implemented for&nbsp;saving Ether. The&nbsp;pseudo random generation mechanism creates a&nbsp;collection of&nbsp;images that is securely stored on&nbsp;a&nbsp;distributed IPFS system. The&nbsp;private pre-sale function is built into&nbsp;the&nbsp;smart contract.</p><p><a href="http://gangws.com" target="blank">A landing page</a> is created with a&nbsp;protocol for&nbsp;connecting crypto wallets.</p>',
+          img: require('@/assets/img/eth.png')
+        },
+        {
+          active: false,
+          scrolled: false,
+          title: 'What-To-Farm token',
+          subtitle: 'What-To-Farm token',
+          text: '<p>The What-To-Farm BEP-20 token is created and a&nbsp;staking smart contract is developed.</p><p>The What-To-Farm token is implemented on&nbsp;the&nbsp;Binance Smart Chain (BSC) network. It is based on&nbsp;reflect tokenomics and follows high-security requirements. The&nbsp;information about the&nbsp;users` deposits are stored on&nbsp;the&nbsp;blockchain. The&nbsp;interest rates are calculated using a&nbsp;unique mechanism. The&nbsp;protocol provides a&nbsp;choice of&nbsp;the&nbsp;aggregated staking pool tariff. Proxy technology is implemented for&nbsp;future updates.</p>',
+          img: require('@/assets/img/globe.png')
+        },
+        {
+          active: false,
+          scrolled: false,
+          title: 'Cross-chain bridge',
+          subtitle: 'Cross-chain bridge',
+          text: '<p>A decentralized service of&nbsp;the&nbsp;What-To-Farm project is designed to&nbsp;route the&nbsp;exchange of&nbsp;tokens.</p><p>The contract implements a&nbsp;mechanism for&nbsp;transferring tokens from one EVM network to&nbsp;another. Cross-chain operations go through DeBridge, a&nbsp;partner company. Token transfer between networks is carried out through the&nbsp;USDС stablecoin, and then into&nbsp;the&nbsp;cryptocurrency chosen by the&nbsp;user. The&nbsp;service performs cross-chain exchange along the&nbsp;optimal route with the&nbsp;lowest commission.</p>',
+          img: require('@/assets/img/globe.png')
+        },
+        {
+          active: false,
+          scrolled: false,
+          title: 'Cryptorobotics Token',
+          subtitle: 'Cryptorobotics Token & Vesting',
+          text: '<p>The DeRobo BEP-20 token on&nbsp;the&nbsp;Binance Smart Chain is designed for&nbsp;Cryptorobotics, a&nbsp;company engaged in&nbsp;trading bots and algotrading.</p><p>DeRobo is a&nbsp;utility token of&nbsp;the&nbsp;company. Tokens are used to&nbsp;pay for&nbsp;services on&nbsp;the&nbsp;exchange. It is used to&nbsp;participate in&nbsp;raffles, fee payments, and rent trading bots. DeRobo&apos;s liquidity is provided via a&nbsp;one-way bridge from the&nbsp;Ethereum network. The&nbsp;token vesting contract is developed for&nbsp;investors, influencers and the&nbsp;community.</p>',
           img: require('@/assets/img/coin.png'),
           css: 'projects__block--stablecoin'
         },
         {
           active: false,
           scrolled: false,
-          title: 'Axie NFT Token',
-          subtitle: 'Axie NFT Token',
-          text: '<p>Creating an NFT collection for authorization.</p><p>Development of an ERC721 smart contract for Solidity on the BSC network for getting verified users one unique key to access other products of in-progress DAO. Creating Proxy Contract for future upgradability and development of NFT-based authorization tools for web and Telegram.</p>',
+          title: 'Cryptorobotics Bridge',
+          subtitle: 'Cryptorobotics Bridge',
+          text: '<p>The one-way liquidity bridge project is developed for&nbsp;Cryptorobotics, a&nbsp;company engaged in&nbsp;trading bots and algotrading. A mechanism of&nbsp;transferring the&nbsp;DeRobo tokens from the&nbsp;Ethereum network to&nbsp;the&nbsp;Binance Smart Chain is implemented.</p><p>DeRobo tokens are burned in&nbsp;the&nbsp;original network. The&nbsp;contract automatically transmits information to&nbsp;the&nbsp;BSC, followed by the&nbsp;distribution of&nbsp;tokens to&nbsp;users.</p><p>The landing page for&nbsp;the&nbsp;cryptocurrency bridge is created. A whitelist mechanism is implemented.</p>',
+          img: require('@/assets/img/coin.png'),
+          css: 'projects__block--stablecoin'
+        },
+        {
+          active: false,
+          scrolled: false,
+          title: 'AlgoEURS',
+          subtitle: 'AlgoEURS',
+          text: '<p>Development of&nbsp;the&nbsp;AlgoEURS architecture. </p><p>AlgoEURS is a&nbsp;decentralized finance (DeFi) protocol on&nbsp;Ethereum blockchain that allows users to&nbsp;borrow AEUR, a&nbsp;stablecoin pegged to&nbsp;the&nbsp;euro, using a&nbsp;wide range of&nbsp;on-chain assets as collateral including plain Ether, other stablecoins, and non-fungible token (NFT).</p><p>The&nbsp;protocol allows borrowers to&nbsp;insure against the&nbsp;liquidation of&nbsp;the&nbsp;collateral assets and provides a&nbsp;platform for&nbsp;investors to&nbsp;make money as insurers. To create the&nbsp;possibility of&nbsp;insuring the&nbsp;collateral and making money on&nbsp;it, the&nbsp;protocol issues AEPUT token on&nbsp;the&nbsp;Ethereum blockchain.</p>',
           img: require('@/assets/img/axie.png')
         },
         {
           active: false,
           scrolled: false,
-          title: 'NFT Game Analytics',
-          subtitle: 'Axie NFT Token',
-          text: '<p>Development of a strategy for the onchain NFT game.</p><p>Strategy development to increase the value of the investor`s collection. Smart Contracts audits for Solidity in Ethereum and Polygon networks and creation of a real-time monitoring system with the collection of more than 20 different metrics of in-game mechanics. Setting up Telegram Bots for Instant Analytics</p>',
+          title: 'Ether Orcs',
+          subtitle: 'Ether Orcs',
+          text: '<p>A project is developed to&nbsp;collect analytics for&nbsp;the&nbsp;on-chain game Ether Orcs.</p><p>An audit of&nbsp;the&nbsp;game smart contracts is conducted both for&nbsp;Ethereum and Polygon networks. A&nbsp;couple of&nbsp;dozen reports are created with suggestions for&nbsp;optimizing the&nbsp;game strategy, taking into&nbsp;account the&nbsp;priorities of&nbsp;the&nbsp;customer.</p><p>The mechanism is designed for&nbsp;data collection and visualization of&nbsp;game statistics on&nbsp;a&nbsp;web page. The&nbsp;online monitoring system of&nbsp;all important game mechanics is implemented. A&nbsp;telegram bot is created to&nbsp;receive analytics and instant crash notifications.</p>',
           img: require('@/assets/img/nft.png')
         }
       ],

@@ -66,21 +66,19 @@
     </div>
 
     <div class="container">
-      <h2 tabindex="5">Company</h2>
+      <h2 tabindex="5">About Us</h2>
       <div class="company__texts">
         <p>
-          Formal Crypto – company-developer of&nbsp;digital products in the field of blockchain
-          technologies
+          Formal Crypto – company specializes in&nbsp;outsourcing digital projects development based
+          on&nbsp;blockchain technology, DeFi and&nbsp;cryptocurrency.
         </p>
         <p>
-          We have been involved in a wide variety of&nbsp;projects, including the creation of DAOs,
-          NFT collections, staking contracts, audits.
+          Great experience with a&nbsp;deep understanding of&nbsp;technology allows us
+          to&nbsp;create customized products products products for&nbsp;our&nbsp;customers. We solve
+          the&nbsp;problems of&nbsp;our business partners, regardless of&nbsp;their complexity.
         </p>
 
-        <p>
-          Having extensive experience working with a&nbsp;variety of customers, we can join your
-          project at any stage: from protocol design to&nbsp;turnkey development.
-        </p>
+        <p>Our highly qualified developers can get involved with your team at&nbsp;any stage.</p>
       </div>
     </div>
   </section>
