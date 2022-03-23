@@ -54,17 +54,17 @@ export default {
         {
           active: true,
           scrolled: false,
-          title: 'NFT Early Adopters',
-          subtitle: 'NFT Early Adopters',
-          text: '<p>The NFT Early Adopters project is the&nbsp;BEP-721 smart contract on&nbsp;the&nbsp;Binance Smart Chain network.</p><p>Authentication tokens (passes), based on&nbsp;NFT, provide users with access to&nbsp;a&nbsp;wide range of&nbsp;services related to&nbsp;a&nbsp;Play-To-Earn game Axis Infinity. Passes are issued for&nbsp;maintaining activity in&nbsp;the&nbsp;social networks of&nbsp;the&nbsp;project. Proxy technology is implemented for&nbsp;future updates.</p>',
+          title: 'NFT ART',
+          subtitle: 'NFT ART',
+          text: '<p>The ERC-721 smart contract is developed with the&nbsp;mechanics of&nbsp;the&nbsp;marketplace at&nbsp;the&nbsp;blockchain level. The&nbsp;functions of&nbsp;selling, viewing all active lots, and buying are integrated within the&nbsp;contract.</p><p>The service allows users to&nbsp;create digital art (NFT) with the&nbsp;possibility of&nbsp;obtaining a&nbsp;physical version. Royalties, NFTs limit per user, vesting time are configurable parameters of&nbsp;the&nbsp;sales mechanism on&nbsp;the&nbsp;marketplace.</p><p>A landing page is created with a&nbsp;protocol for&nbsp;connecting crypto wallets.</p>',
           img: require('@/assets/img/eth.png')
         },
         {
           active: false,
           scrolled: false,
-          title: 'NFT ART',
-          subtitle: 'NFT ART',
-          text: '<p>The ERC-721 smart contract is developed with the&nbsp;mechanics of&nbsp;the&nbsp;marketplace at&nbsp;the&nbsp;blockchain level. The&nbsp;functions of&nbsp;selling, viewing all active lots, and buying are integrated within the&nbsp;contract.</p><p>The service allows users to&nbsp;create digital art (NFT) with the&nbsp;possibility of&nbsp;obtaining a&nbsp;physical version. Royalties, NFTs limit per user, vesting time are configurable parameters of&nbsp;the&nbsp;sales mechanism on&nbsp;the&nbsp;marketplace.</p><p>A landing page is created with a&nbsp;protocol for&nbsp;connecting crypto wallets.</p>',
+          title: 'NFT Early Adopters',
+          subtitle: 'NFT Early Adopters',
+          text: '<p>The NFT Early Adopters project is the&nbsp;ERC-721 smart contract on&nbsp;the&nbsp;Binance Smart Chain network.</p><p>Authentication tokens (passes), based on&nbsp;NFT, provide users with access to&nbsp;a&nbsp;wide range of&nbsp;services related to&nbsp;a&nbsp;Play-To-Earn game Axis Infinity. Passes are issued for&nbsp;maintaining activity in&nbsp;the&nbsp;social networks of&nbsp;the&nbsp;project. Proxy technology is implemented for&nbsp;future updates.</p>',
           img: require('@/assets/img/eth.png')
         },
         {
@@ -78,16 +78,16 @@ export default {
         {
           active: false,
           scrolled: false,
-          title: 'What-To-Farm token',
-          subtitle: 'What-To-Farm token',
-          text: '<p>The What-To-Farm BEP-20 token is created and a&nbsp;staking smart contract is developed.</p><p>The What-To-Farm token is implemented on&nbsp;the&nbsp;Binance Smart Chain (BSC) network. It is based on&nbsp;reflect tokenomics and follows high-security requirements. The&nbsp;information about the&nbsp;users` deposits are stored on&nbsp;the&nbsp;blockchain. The&nbsp;interest rates are calculated using a&nbsp;unique mechanism. The&nbsp;protocol provides a&nbsp;choice of&nbsp;the&nbsp;aggregated staking pool tariff. Proxy technology is implemented for&nbsp;future updates.</p>',
+          title: 'What-To-Farm Token',
+          subtitle: 'What-To-Farm Token',
+          text: '<p>The What-To-Farm ERC-20 token is created and a&nbsp;staking smart contract is developed.</p><p>The What-To-Farm token is implemented on&nbsp;the&nbsp;Binance Smart Chain (BSC) network. It is based on&nbsp;reflect tokenomics and follows high-security requirements. The&nbsp;information about the&nbsp;users` deposits are stored on&nbsp;the&nbsp;blockchain. The&nbsp;interest rates are calculated using a&nbsp;unique mechanism. The&nbsp;protocol provides a&nbsp;choice of&nbsp;the&nbsp;aggregated staking pool tariff. Proxy technology is implemented for&nbsp;future updates.</p>',
           img: require('@/assets/img/globe.png')
         },
         {
           active: false,
           scrolled: false,
-          title: 'Cross-chain bridge',
-          subtitle: 'Cross-chain bridge',
+          title: 'Cross-chain Router',
+          subtitle: 'Cross-chain Router',
           text: '<p>A decentralized service of&nbsp;the&nbsp;What-To-Farm project is designed to&nbsp;route the&nbsp;exchange of&nbsp;tokens.</p><p>The contract implements a&nbsp;mechanism for&nbsp;transferring tokens from one EVM network to&nbsp;another. Cross-chain operations go through DeBridge, a&nbsp;partner company. Token transfer between networks is carried out through the&nbsp;USDС stablecoin, and then into&nbsp;the&nbsp;cryptocurrency chosen by the&nbsp;user. The&nbsp;service performs cross-chain exchange along the&nbsp;optimal route with the&nbsp;lowest commission.</p>',
           img: require('@/assets/img/globe.png')
         },
