@@ -67,18 +67,44 @@
 
     <div class="container">
       <h2 tabindex="5">About Us</h2>
-      <div class="company__texts">
-        <p>
-          Formal Crypto – company specializes in&nbsp;outsourcing digital projects development based
-          on&nbsp;blockchain technology, DeFi and&nbsp;cryptocurrency.
-        </p>
-        <p>
-          Great experience with a&nbsp;deep understanding of&nbsp;technology allows us
-          to&nbsp;create customized products for&nbsp;our&nbsp;customers. We solve the&nbsp;problems
-          of&nbsp;our business partners, regardless of&nbsp;their complexity.
-        </p>
+      <div class="company__content">
+        <div class="company__texts">
+          <p>
+            Formal Crypto specializes in&nbsp;outsourcing digital projects development based
+            on&nbsp;blockchain technology, DeFi and&nbsp;cryptocurrency.
+          </p>
+          <p>
+            Great experience with a&nbsp;deep understanding of&nbsp;technology allows us
+            to&nbsp;create customized products for&nbsp;our&nbsp;customers. We solve
+            the&nbsp;problems of&nbsp;our business partners, regardless of&nbsp;their complexity.
+          </p>
 
-        <p>Our highly qualified developers can get involved with your team at&nbsp;any stage.</p>
+          <p>Our highly qualified developers can get involved with your team at&nbsp;any stage.</p>
+        </div>
+        <div class="company__statistic">
+          <div class="company__statistic-left">
+            <div class="company__statistic-item">
+              <div class="company__statistic-num">15+</div>
+              <div class="company__statistic-info">
+                Professional blockchain developers in our team
+              </div>
+            </div>
+            <div class="company__statistic-item">
+              <div class="company__statistic-num">20+</div>
+              <div class="company__statistic-info">Successfully implemented projects</div>
+            </div>
+          </div>
+          <div class="company__statistic-right">
+            <div class="company__statistic-item">
+              <div class="company__statistic-num">3+</div>
+              <div class="company__statistic-info">Years blockchain development experience</div>
+            </div>
+            <div class="company__statistic-item">
+              <div class="company__statistic-num">50+</div>
+              <div class="company__statistic-info">Deployed smart contracts</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
