@@ -70,7 +70,7 @@
       <div class="company__content">
         <div class="company__texts">
           <p>
-            Formal Crypto specializes in&nbsp;outsourcing digital projects development based
+            Formal Crypto specializes in digital projects development based
             on&nbsp;blockchain technology, DeFi and&nbsp;cryptocurrency.
           </p>
           <p>
